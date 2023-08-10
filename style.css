@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;600;700&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;500;600;700&family=Roboto:wght@300;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */ 
+
+
+/* Diseño original para mobile 320x876 y luego se aplican 2 medias querys */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: #163e5c;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagen_logo img{
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.header nav ul{
+    list-style: none;
+}
+
+.header nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle at center center, rgba(192, 239, 210, 0.561),rgba(47, 130, 239, 0.499)), url(imagenes/1.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero p{
+    font-size: 1.9rem;
+    font-weight: 700;
+    color:#163e5c;
+    padding: 10px;
+}
+
+.titulo_hero .amarillo{
+    color: #fedb5a;
+}
+
+.cta{
+    width: 120px;
+    height: 70px;
+    background-color: #163e5c;
+    border-radius: 15px;
+    box-shadow: 6px 6px 10px #163e5c;
+}
+
+.cta a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+}
+
+.ola1 svg{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+
+.segmento{
+    width: 100%;
+    height: 400px;
+}
+
+.s1{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.s1 h1{
+    font-size: 3rem;
+    color: #163e5c;
+    text-align: center; 
+}
+
+.s1 h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #a4eaf6;
+    text-align: center;
+}
+
+.s1 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.s2{
+    height: 500px;
+    background-color: #163e5c;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ola2 svg{
+    position: absolute;
+    top: 1463px;
+}
+
+.s2 h2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    color: #a4eaf6;
+    text-align: center;
+}
+
+/* Probe varias imagenes, tamaños y formatos pero no logre que lea la img de la url */
+.lista_actividades{
+    list-style-image: url(imagenes/iconogota.png)
+}
+
+.s2 ul li{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.s2 a{
+    background-color: #a4eaf6;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+    align-self: center;
+    box-shadow: 6px 6px 8px #fedb5a;
+}
+
+.s3{
+    height: 800px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #a4eaf6;
+}
+
+.ola3 svg{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.s3 .titulo_suc h2{
+    color: #163e5c;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.s3 iframe{
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.maps{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.s3 .ola4{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 800px;
+}
+
+.s4{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+.s4 .px2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight:bold;
+    color: #163e5c;
+    text-align: center;
+}
+
+.s4 .px2 p{
+    margin: 2px;
+}
+
+.s4 .cta2{
+    background-color: #a4eaf6;
+    box-shadow: 6px 6px 8px #163e5c;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 15px;
+    align-self: center;
+    margin-top: 20px;
+}
+
+.s5{
+    width: 100%;
+    height: 80px;
+    background-color: #163e5c;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.s5 .fa-brands{
+    font-size: 2rem;
+    color: white;
+}
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: #fedb5a;
+}
+
+footer p{
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 8px;
+}
+
+.iconowp{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 2px;
+    right: 2px;
+}
+
+/* Aca aplicare dos medias querys, en 480px y 768px (para tablet y notebooks) */
+
+@media screen and (min-width:480px){
+    .header nav ul li{
+        display: inline-block;
+        padding: 0 10px;
+    }  
+    
+    .imagen_logo img{
+        width: 65px;
+        height: 65px;
+    }
+    
+    .header nav ul li a{
+        font-size: 1rem;
+    }
+       
+    .hero p{
+        font-size: 2.8rem;
+    }
+    
+    .cta{
+        width: 130px;
+        height: 70px;
+        margin-top: 100px;
+    }
+    
+    .cta a{
+        font-size: 1.3rem;
+    }
+        
+    .s1 h1{
+        font-size: 4rem;
+    }
+    
+    .s1 h2{
+        font-size: 1.4rem;
+    }
+    
+    .s1 p{
+        font-size: 1.1rem;
+    }
+    
+    .s2{
+        height: 500px;
+        background-color: #163e5c;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    
+    .ola2 svg{
+        position: absolute;
+        top: 1460px;
+    }
+    
+    .s2 h2{
+        font-size: 2.8rem;
+    }
+    
+    /* Probe varias imagenes, tamaños y formatos pero no logre que lea la img de la url */
+    .lista_actividades{
+        list-style-image: url(imagenes/iconogota.png)
+    }
+    
+    .s2 ul li{
+        font-size: 1.3rem;
+    }
+    
+    .s2 a{
+        font-size: 1.4rem;
+    }
+    
+    .s3 .titulo_suc h2{
+        font-size: 3rem;
+    }
+    
+    .s3 iframe{
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+    }
+    
+    .s4{
+        height: 370px;
+        gap: 15px;
+    }
+    
+    .s4 .px2{
+        font-size: 1.4rem;
+    }
+    
+    .s4 .cta2{
+        font-size: 1.3rem;
+    }
+    
+    footer{
+        width: 100%;
+        height: 40px;
+        background-color: #fedb5a;
+    }
+    
+    footer p{
+        font-size: 1rem;
+    }
+    
+    .iconowp{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (min-width:768px){
+
+    .header{
+        height: 130px;
+    }
+    
+    .imagen_logo img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .header nav ul li{
+        display: inline-block;
+        padding: 0 20px;
+    }   
+
+    .header nav ul li:hover{
+        transform: scale(1.2)
+    }
+    
+    .header nav ul li a{
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    .header nav ul li a:hover{
+        color: #fedb5a;
+    }
+ 
+    .hero{
+        justify-content: space-between;
+    } 
+
+    .hero p{
+        font-size: 4rem;
+        font-weight: 700;
+        padding: 8px;
+    }
+    
+    .cta{
+        width: 150px;
+        height: 90px;
+        box-shadow: 10px 10px 20px #163e5c;
+        margin-top: 300px;
+    }
+    
+    .cta:hover{
+        transform: scale(1.2)
+    }
+
+    .cta a{
+        font-size: 1.6rem;
+    }
+
+    .cta a:hover{
+        color: #fedb5a;
+    }
+      
+    .segmento{
+        width: 100%;
+        height: 400px;
+    }
+    
+    .s1{
+        height: 600px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: center;
+    }
+    
+    .s1 h1{
+        font-size: 5rem;
+    }
+    
+    .s1 h2{
+        font-size: 2rem;
+    }
+    
+    .s1 p{
+        font-size: 1.5rem;
+    }
+    
+    .s2{
+        height: 500px;
+    }
+    
+    .ola2 svg{
+        top: 1670px;
+    }
+    
+    .s2 h2{
+        font-size: 3.5rem;
+    }
+    
+    .s2 ul li{
+    font-size: 1.5rem;
+    }
+    
+    .s2 a{
+        font-size: 1.7rem;
+        box-shadow: 8px 8px 10px #fedb5a;
+    }
+
+    .s2 a:hover{
+        transform: scale(1.2);
+        color: #163e5c;
+    }
+    
+    .s3{
+        height: 800px;
+        justify-content: space-around;
+    
+    }
+      
+    .s3 .titulo_suc h2{
+        font-size: 5rem;
+    }
+    
+    .s3 iframe{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .maps{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+    }
+       
+    .s4{
+        height: 500px;
+    }
+    
+    .s4 .px2{
+        font-size: 1.9rem;
+    }
+    
+    .s4 .px2 p{
+        margin: 8px;
+    }
+    
+    .s4 .cta2{
+        box-shadow: 10px 10px 12px #163e5c;
+        font-size: 1.7rem;
+        padding: 8px;
+        margin-top: 30px;
+    }
+
+    .s4 .cta2:hover{
+        transform: scale(1.2);
+        color: #fedb5a;
+    }
+    
+    .s5{
+        width: 100%;
+        height: 80px;
+    }
+       
+    footer p{
+        font-size: 1.2rem;  
+    }
+    
+    .iconowp{
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .iconowp img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .iconowp img:hover{
+        transform: scale(1.2);
+    }
+}
+
+
